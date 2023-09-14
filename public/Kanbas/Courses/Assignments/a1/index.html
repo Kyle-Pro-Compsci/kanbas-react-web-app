@@ -92,64 +92,52 @@
       <!-- ******** COLUMN 3 ******** -->
       <td valign="top">
         <select>
-          <option value="Gradebook">Gradebook</option>
-        </select>
-
-        <button>Import</button>
-
-        <select>
-          <option value="Export">Export</option>
-        </select>
-
-        <button>Configure</button>
-
-        <h2>Student Names</h2>
-        <input type="text" placeholder="Search Students"/>
-        <h2>Assignment Names</h2>
-        <input type="text" placeholder="Search Assignments"/> <br/>
-        <br/>
-        <button>Apply Filters</button>
-        <table border="1">
-          <thead>
-            <tr>
-              <th>Student Name</th>
-              <th>Assignment 1 SETUP</th>
-              <th>Assignment 2 HTML</th>
-              <th>Assignment 3 CSS</th>
-              <th>Assignment 4 BOOTSTRAP</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Bob</td>
-              <td style="text-align: center">50</td>
-              <td style="text-align: center">50</td>
-              <td style="text-align: center">50</td>
-              <td style="text-align: center">50</td>
-            </tr>
-            <tr>
-              <td>Duncan the Tall</td>
-              <td style="text-align: center">45</td>
-              <td style="text-align: center">52</td>
-              <td style="text-align: center">66</td>
-              <td style="text-align: center">80</td>
-            </tr>
-            <tr>
-              <td>Aegon V Targaryen</td>
-              <td style="text-align: center">87</td>
-              <td style="text-align: center">92</td>
-              <td style="text-align: center">04</td>
-              <td style="text-align: center">98</td>
-            </tr>
-            <tr>
-              <td>Not Bob</td>
-              <td style="text-align: center">55</td>
-              <td style="text-align: center">65</td>
-              <td style="text-align: center">75</td>
-              <td style="text-align: center">85</td>
-            </tr>
-          </tbody>
-        </table>
+          <option value="speed-grader">SpeedGrader</option>
+        </select> <br />
+        <hr />
+        <h2>Assignment Name</h2>
+        <form>
+          <input type="text" value="A1 - ENV + HTML"> <br />
+          <br />
+          <textarea cols="50" rows="10">This is the assignment description. Lorem ipsum.</textarea> <br />
+          <br />
+          Points<br />
+          <input type="number" / value="100"><br />
+          <br />
+          Assignment Group<br />
+          <select>
+            <option value="assignments">ASSIGNMENTS</option>"
+          </select><br />
+          <br />
+          Display Grade as<br />
+          <select>
+            <option value="percentage">Percentage</option>
+          </select><br />
+          <br />
+          Submission Type<br />
+          <select>
+            <option value="online">Online</option>
+          </select><br />
+          <br />
+          Online Entry Options <br />
+          <input type="checkbox" value="text-entry" name="check-entry-option" id="chkbox-textentry" />
+          <label for="chkbox-textentry">Text Entry</label> <br />
+          <input type="checkbox" value="web-url" name="check-entry-option" id="chkbox-web" />
+          <label for="chkbox-web">Website URL</label> <br />
+          <input type="checkbox" value="media-rec" name="check-entry-option" id="chkbox-media" />
+          <label for="chkbox-media">Media Recordings</label> <br />
+          <input type="checkbox" value="student-annotation" name="check-entry-option" id="chkbox-annotation" />
+          <label for="chkbox-annotation">Student Annotation</label> <br />
+          <input type="checkbox" value="file-uploads" name="check-entry-option" id="chkbox-file" />
+          <label for="chkbox-file">File Uploads</label> <br />
+          <br />
+          Submission Attempts<br />
+          <select>
+            <option value="unlimited">Unlimited</option>
+          </select><br />
+          <br />
+          
+        </form>
 
       </td>
     </tr>
