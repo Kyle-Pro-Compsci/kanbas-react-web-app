@@ -1,157 +1,181 @@
-<table border="1" width="100%">
-  <tbody>
-    <tr>
-      <!-- ******** COLUMN 1 ******** -->
-      <td valign="top">
-        <ul>
-          <li>
-            <a href="#">Northeastern</a>
-          </li>
-          <li>
-            <a href="/kanbas/account">Account</a>
-          </li>
-          <li>
-            <a href="#">Dashboard</a>
-          </li>
-          <li>
-            <a href="#">Calendar</a>
-          </li>
-          <li>
-            <a href="#">Inbox</a>
-          </li>
-          <li>
-            <a href="#">History</a>
-          </li>
-          <li>
-            <a href="#">Studio</a>
-          </li>
-          <li>
-            <a href="#">Commons</a>
-          </li>
-          <li>
-            <a href="#">Help</a>
-          </li>
-        </ul>
-      </td>
-      <!-- ******** COLUMN 2 ******** -->
-      <td valign="top">
-        <ul>
-          <li>
-            <a href="/kanbas/courses/home">Home</a>
-          </li>
-          <li>
-            <a href="/kanbas/courses/modules">Modules</a>
-          </li>
-          <li>
-            <a href="/kanbas/courses/piazza">Piazza</a>
-          </li>
-          <li>
-            <a href="/kanbas/courses/zoom">Zoom</a>
-          </li>
-          <li>
-            <a href="/kanbas/courses/assignments">Assignments</a>
-          </li>
-          <li>
-            <a href="/kanbas/courses/grades">Grades</a>
-          </li>
-          <li>
-            <a href="#">People</a>
-          </li>
-          <li>
-            <a href="#">Panopto Video</a>
-          </li>
-          <li>
-            <a href="#">Discussions</a>
-          </li>
-          <li>
-            <a href="#">Announcements</a>
-          </li>
-          <li>
-            <a href="#">Pages</a>
-          </li>
-          <li>
-            <a href="#">Files</a>
-          </li>
-          <li>
-            <a href="#">Rubrics</a>
-          </li>
-          <li>
-            <a href="#">Outcomes</a>
-          </li>
-          <li>
-            <a href="#">Collaborations</a>
-          </li>
-          <li>
-            <a href="#">Syllabus</a>
-          </li>
-          <li>
-            <a href="#">Settings</a>
-          </li>
-        </ul>
-      </td>
-      <!-- ******** COLUMN 3 ******** -->
-      <td valign="top">
-        <select>
-          <option value="Gradebook">Gradebook</option>
-        </select>
+<html>
 
-        <button>Import</button>
+<head>
+  <link href="/vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="/vendors/fontawesome/css/all.css" rel="stylesheet" />
+  <link href="/css/toolbar.css" rel="stylesheet" />
+  <link href="/css/content.css" rel="stylesheet" />
+  <link href="/css/other.css" rel="stylesheet" />
+</head>
 
-        <select>
-          <option value="Export">Export</option>
-        </select>
+<body>
 
-        <button>Configure</button>
+  <div class="container">
+    <!-- Navigation Sidebar -->
+    <div class="nav-sidebar">
+      <ul class="list-group">
+        <li class="list-group-item list-group-item-action">
+          <a href="#"><i class="fa-solid fa-n fa-2x" style="color: red"></i><br />Northeastern</a>
+        </li>
+        <li class="list-group-item list-group-item-action">
+          <a href="/kanbas/account"><i class="fa-regular fa-circle-user fa-2x" style="color: grey"></i>Account</a>
+        </li>
+        <li class="list-group-item list-group-item-action">
+          <a href="/kanbas/dashboard"><i class="fa-solid fa-gauge fa-2x" style="color: red"></i>Dashboard</a>
+        </li>
+        <li class="list-group-item list-group-item-action active">
+          <a href="/kanbas/courses/home"><i class="fa-solid fa-book fa-2x" style="color: red"></i>Courses</a>
+        </li>
+        <li class="list-group-item list-group-item-action">
+          <a href="#"><i class="fa-solid fa-calendar-days fa-2x" style="color: red"></i>Calendar</a>
+        </li>
+        <li class="list-group-item list-group-item-action">
+          <a href="#"><i class="fa-solid fa-inbox fa-2x" style="color: red"></i>Inbox</a>
+        </li>
+        <li class="list-group-item list-group-item-action">
+          <a href="#"><i class="fa-solid fa-clock fa-2x" style="color: red"></i>History</a>
+        </li>
+        <li class="list-group-item list-group-item-action">
+          <a href="#"><i class="fa-solid fa-photo-film fa-2x" style="color: red"></i>Studio</a>
+        </li>
+        <li class="list-group-item list-group-item-action">
+          <a href="#"><i class="fa-solid fa-c fa-2x" style="color: red"></i>Commons</a>
+        </li>
+        <li class="list-group-item list-group-item-action">
+          <a href="#"><i class="fa-solid fa-circle-question fa-2x" style="color: red"></i>Help</a>
+        </li>
+      </ul>
+    </div>
+    <div class="vertical-flex-container">
+      <!-- Top Breadcrumb -->
+      <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb" class="breadcrumb-header">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item">CS4550</li>
+          <li class="breadcrumb-item">Grades</li>
+        </ol>
+      </nav>
+      <!-- Main Horizontal Content -->
+      <div class="horizontal-flex-container">
+        <!-- Secondary Sidebar -->
+        <div class="secondary-sidebar">
+          <ul class="list-group">
+            <li class="list-group-item list-group-item-action">
+              <a href="/kanbas/courses/home">Home</a>
+            </li>
+            <li class="list-group-item list-group-item-action">
+              <a href="/kanbas/courses/modules">Modules</a>
+            </li>
+            <li class="list-group-item list-group-item-action">
+              <a href="/kanbas/courses/piazza">Piazza</a>
+            </li>
+            <li class="list-group-item list-group-item-action">
+              <a href="/kanbas/courses/zoom">Zoom</a>
+            </li>
+            <li class="list-group-item list-group-item-action">
+              <a href="/kanbas/courses/assignments">Assignments</a>
+            </li>
+            <li class="list-group-item list-group-item-action active">
+              <a href="/kanbas/courses/grades">Grades</a>
+            </li>
+            <li class="list-group-item list-group-item-action">
+              <a href="#">People</a>
+            </li>
+            <li class="list-group-item list-group-item-action">
+              <a href="#">Panopto Video</a>
+            </li>
+            <li class="list-group-item list-group-item-action">
+              <a href="#">Discussions</a>
+            </li>
+            <li class="list-group-item list-group-item-action">
+              <a href="#">Announcements</a>
+            </li>
+            <li class="list-group-item list-group-item-action">
+              <a href="#">Pages</a>
+            </li>
+            <li class="list-group-item list-group-item-action">
+              <a href="#">Files</a>
+            </li>
+            <li class="list-group-item list-group-item-action">
+              <a href="#">Rubrics</a>
+            </li>
+            <li class="list-group-item list-group-item-action">
+              <a href="#">Outcomes</a>
+            </li>
+            <li class="list-group-item list-group-item-action">
+              <a href="#">Collaborations</a>
+            </li>
+            <li class="list-group-item list-group-item-action">
+              <a href="#">Syllabus</a>
+            </li>
+            <li class="list-group-item list-group-item-action">
+              <a href="#">Settings</a>
+            </li>
+          </ul>
+        </div>
+        <!-- Buttons and Main Content (Vertical) -->
+        <div class="vertical-flex-container">
 
-        <h2>Student Names</h2>
-        <input type="text" placeholder="Search Students"/>
-        <h2>Assignment Names</h2>
-        <input type="text" placeholder="Search Assignments"/> <br/>
-        <br/>
-        <button>Apply Filters</button>
-        <table border="1">
-          <thead>
-            <tr>
-              <th>Student Name</th>
-              <th>Assignment 1 SETUP</th>
-              <th>Assignment 2 HTML</th>
-              <th>Assignment 3 CSS</th>
-              <th>Assignment 4 BOOTSTRAP</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Bob</td>
-              <td style="text-align: center">50</td>
-              <td style="text-align: center">50</td>
-              <td style="text-align: center">50</td>
-              <td style="text-align: center">50</td>
-            </tr>
-            <tr>
-              <td>Duncan the Tall</td>
-              <td style="text-align: center">45</td>
-              <td style="text-align: center">52</td>
-              <td style="text-align: center">66</td>
-              <td style="text-align: center">80</td>
-            </tr>
-            <tr>
-              <td>Aegon V Targaryen</td>
-              <td style="text-align: center">87</td>
-              <td style="text-align: center">92</td>
-              <td style="text-align: center">04</td>
-              <td style="text-align: center">98</td>
-            </tr>
-            <tr>
-              <td>Not Bob</td>
-              <td style="text-align: center">55</td>
-              <td style="text-align: center">65</td>
-              <td style="text-align: center">75</td>
-              <td style="text-align: center">85</td>
-            </tr>
-          </tbody>
-        </table>
+          <table class="table-responsive">
+            <thead>
+              <tr>
+                <th>Student Names</th>
+                <th>Assignment Names</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
 
-      </td>
-    </tr>
-  </tbody>
-</table>
+
+          <!-- Grades Table -->
+          <table class="table-responsive table-striped">
+            <thead>
+              <tr>
+                <th scope="col">Student Name</th>
+                <th scope="col">Assignment 1 SETUP</th>
+                <th scope="col">Assignment 2 HTML</th>
+                <th scope="col">Assignment 3 CSS</th>
+                <th scope="col">Assignment 4 BOOTSTRAP</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Bob</td>
+                <td style="text-align: center">50</td>
+                <td style="text-align: center">50</td>
+                <td style="text-align: center">50</td>
+                <td style="text-align: center">50</td>
+              </tr>
+              <tr>
+                <td>Duncan the Tall</td>
+                <td style="text-align: center">45</td>
+                <td style="text-align: center">52</td>
+                <td style="text-align: center">66</td>
+                <td style="text-align: center">80</td>
+              </tr>
+              <tr>
+                <td>Aegon V Targaryen</td>
+                <td style="text-align: center">87</td>
+                <td style="text-align: center">92</td>
+                <td style="text-align: center">04</td>
+                <td style="text-align: center">98</td>
+              </tr>
+              <tr>
+                <td>Not Bob</td>
+                <td style="text-align: center">55</td>
+                <td style="text-align: center">65</td>
+                <td style="text-align: center">75</td>
+                <td style="text-align: center">85</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
