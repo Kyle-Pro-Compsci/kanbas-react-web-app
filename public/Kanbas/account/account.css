@@ -1,0 +1,12 @@
+.main-content .edit-button {
+    float: right;
+    background-color: lightgrey;
+    border: 0px;
+    border-radius: 4px;
+    height: 40px;
+    padding: 10px;
+}
+
+.profile-logo {
+    width: 400px;
+}

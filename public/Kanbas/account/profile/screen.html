@@ -1,92 +1,96 @@
-<table border="1" width="100%">
-    <tbody>
-      <tr>
-        <!-- ******** COLUMN 1 ******** -->
-        <td valign="top">
-          <ul>
-            <li>
-              <a href="#">Northeastern</a>
+<html>
+  <head>
+    <link href="/vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="/vendors/fontawesome/css/all.css" rel="stylesheet" />
+    <link href="/css/toolbar.css" rel="stylesheet" />
+    <link href="/css/content.css" rel="stylesheet" />
+    <link href="/kanbas/account/account.css" rel="stylesheet" />
+  </head>
+  <body>
+
+
+    <div class="container">
+      <div class="row">
+        <!-- Navigation Sidebar -->
+        <div class="nav-sidebar">
+          <ul class="list-group">
+            <li class="list-group-item list-group-item-action">
+              <a href="#"><i class="fa-solid fa-n fa-2x" style="color: red"></i><br />Northeastern</a>
             </li>
-            <li>
-              <a href="/kanbas/account">Account</a>
+            <li class="list-group-item list-group-item-action active">
+              <a href="/kanbas/account"><i class="fa-regular fa-circle-user fa-2x" style="color: grey"></i>Account</a>
             </li>
-            <li>
-              <a href="#">Dashboard</a>
+            <li class="list-group-item list-group-item-action">
+              <a href="/kanbas/dashboard"><i class="fa-solid fa-gauge fa-2x" style="color: red"></i>Dashboard</a>
             </li>
-            <li>
-              <a href="#">Calendar</a>
+            <li class="list-group-item list-group-item-action">
+              <a href="/kanbas/courses/home"><i class="fa-solid fa-book fa-2x" style="color: red"></i>Courses</a>
             </li>
-            <li>
-              <a href="#">Inbox</a>
+            <li class="list-group-item list-group-item-action">
+              <a href="#"><i class="fa-solid fa-calendar-days fa-2x" style="color: red"></i>Calendar</a>
             </li>
-            <li>
-              <a href="#">History</a>
+            <li class="list-group-item list-group-item-action">
+              <a href="#"><i class="fa-solid fa-inbox fa-2x" style="color: red"></i>Inbox</a>
             </li>
-            <li>
-              <a href="#">Studio</a>
+            <li class="list-group-item list-group-item-action">
+              <a href="#"><i class="fa-solid fa-clock fa-2x" style="color: red"></i>History</a>
             </li>
-            <li>
-              <a href="#">Commons</a>
+            <li class="list-group-item list-group-item-action">
+              <a href="#"><i class="fa-solid fa-photo-film fa-2x" style="color: red"></i>Studio</a>
             </li>
-            <li>
-              <a href="#">Help</a>
+            <li class="list-group-item list-group-item-action">
+              <a href="#"><i class="fa-solid fa-c fa-2x" style="color: red"></i>Commons</a>
+            </li>
+            <li class="list-group-item list-group-item-action">
+              <a href="#"><i class="fa-solid fa-circle-question fa-2x" style="color: red"></i>Help</a>
             </li>
           </ul>
-        </td>
-        <!-- ******** COLUMN 2 ******** -->
-        <td valign="top">
-          <ul>
-            <li>
+        </div>
+        <!-- Secondary Sidebar -->
+        <div class="secondary-sidebar">
+          <ul class="list-group">
+            </li>
+            <li class="list-group-item list-group-item-action">
               <a href="#">Notifications</a>
             </li>
-            <li>
-              <a href="profile/screen.html">Profile</a>
+            <li class="list-group-item list-group-item-action active">
+              <a href="#">Profile</a>
             </li>
-            <li>
+            <li class="list-group-item list-group-item-action">
               <a href="#">Files</a>
             </li>
-            <li>
+            <li class="list-group-item list-group-item-action">
               <a href="#">Settings</a>
             </li>
-            <li>
+            <li class="list-group-item list-group-item-action">
               <a href="#">ePortfolios</a>
             </li>
-            <li>
+            <li class="list-group-item list-group-item-action">
+              <a href="#">Shared Content</a>
+            </li>
+            <li class="list-group-item list-group-item-action">
               <a href="#">The Hub</a>
             </li>
-            <li>
+            <li class="list-group-item list-group-item-action">
               <a href="#">Qwickly Course Tools</a>
             </li>
-            <li>
+            <li class="list-group-item list-group-item-action">
               <a href="#">Global Announcements</a>
             </li>
           </ul>
-        </td>
-        <!-- ******** COLUMN 3 ******** -->
-        <td>
-          <h3>Kyle Koo's Profile</h3>
-          <hr/>
-
-          <h1>
-            <form action="profile-editor/screen.html" style="text-align:right;">
-                <button>Edit Profile</button>
-            </form>
-            Kyle Koo
-          </h1>
-          <h2>
-            Contact
-          </h2>
-          No registered services, you can add some on the <a href="#">settings</a> page.
-          <h2>
-            Biography
-          </h2>
-          Kyle Koo hasn't added a bio
-          <h2>
-            Links
-          </h2>
-          Kyle Koo hasn't added any links
-        </td>
-      </tr>
-    </tbody>
-  </table>
-
+        </div>
+        <!-- Profile Summary -->
+        <div class="main-content">
+          <i class="fa-regular fa-circle-user fa-10x" style="color: grey"></i>
+          <a href="/kanbas/account/profile/profile-editor/screen.html" class="button edit-button"><i class="fa-solid fa-pencil"></i>Edit Profile</a>
+          <br />
+          <h1>Kyle Koo</h1>
+          <br />
+          <h3>Contact</h3>
+          <p>No registered services, you can add some on the settings page</p>  
+          <h3>Biography</h3>
+          <p>Student</p>
+          <h3>Links</h3>
+        </div>
+  </body>
+</html> 
