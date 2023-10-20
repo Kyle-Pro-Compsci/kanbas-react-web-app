@@ -8,6 +8,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 import "./Kanbas/KanbasNavigation/navbar.css";
 import "./Kanbas/Courses/CourseNavigation/course-navigation.css"
+import "./Kanbas/kanbas.css";
 
 function App() {
     return (

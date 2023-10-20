@@ -3,6 +3,8 @@ import { useParams, Routes, Route, Navigate, useLocation } from "react-router-do
 import CourseNavigation from "./CourseNavigation";
 import Modules from "./Modules";
 import Home from "./Home";
+import Assignments from "./Assignments";
+import AssignmentEditor from "./Assignments/AssignmentEditor";
 
 
 function Courses() {
@@ -14,7 +16,7 @@ function Courses() {
     var course_section = path_parts[path_parts.length - 1];
     console.log(pathname);
     return (
-        <div className="d-flex flex-column">
+        <div className="d-flex flex-column main-window">
             <div>
                 <nav style={breadcrumb_style} aria-label="breadcrumb" className="breadcrumb-header">
                     <ol className="breadcrumb">
@@ -27,15 +29,15 @@ function Courses() {
             </div>
             <div className="d-flex flex-row">
                 <CourseNavigation />
-                <div>
+                <div className="main-window">
                     <Routes>
                         <Route path="/" element={<Navigate to="Home" />} />
                         <Route path="Home" element={<Home/>} />
                         <Route path="Modules" element={<Modules />} />
-                        <Route path="Assignments" element={<h1>Assignments</h1>} />
+                        <Route path="Assignments" element={<Assignments/>} />
                         <Route
                             path="Assignments/:assignmentId"
-                            element={<h1>Assignment Editor</h1>}
+                            element={<AssignmentEditor/>}
                         />
                         <Route path="Grades" element={<h1>Grades</h1>} />
                     </Routes>

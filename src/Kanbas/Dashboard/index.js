@@ -4,7 +4,7 @@ import "./dashboard.css"
 function Dashboard() {
   const courses = db.courses;
   return (
-    <div>
+    <div className="d-flex flex-column main-window">
       <h1>Dashboard</h1>
       <hr />
       <h2> Published Courses</h2>
