@@ -1,0 +1,33 @@
+.dashboard-container {
+    display:flex;
+    float:left;
+    flex-direction: column;
+    flex-grow: 1;
+    text-decoration: none;  
+}
+
+.card-container {
+    display:flex;
+}
+
+.dashboard-card {
+    width: 260px;
+    margin: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.dashboard-card h5 {
+    color: cornflowerblue;
+    font-size: 1rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.dashboard-card p {
+    font-size: 0.875rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

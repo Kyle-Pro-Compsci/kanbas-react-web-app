@@ -1,0 +1,17 @@
+.course-sidebar {
+    width: 150px;
+    color:darkred;
+    margin: 20px;
+    border-radius: 0;
+}
+
+.course-sidebar .list-group-item {
+    color: darkred;
+    border: 2px transparent;
+}
+
+.course-sidebar .list-group-item.active {
+    color: black;
+    background-color: unset;
+    border-left: solid 2px;
+}

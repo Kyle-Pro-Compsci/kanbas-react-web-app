@@ -5,7 +5,7 @@ import {Link} from "react-router-dom";
 function Labs() {
     return (
         <div>
-            <Nav/>
+            {/* <Nav/> */}
             <Assignment3 />
         </div>
     );
