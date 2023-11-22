@@ -2,15 +2,6 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 function WorkingWithArrays() {
     const API = "http://localhost:4000/a5/todos";
-    if (!todo) {
-        res.res
-            .status(404)
-            .json({
-                message:
-                    `Unable to update Todo with ID ${id}`
-            });
-        return;
-    }
     const [errorMessage, setErrorMessage] = useState(null);
     const [todo, setTodo] = useState({
         id: 1,

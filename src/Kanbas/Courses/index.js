@@ -1,5 +1,8 @@
 import db from "../../Kanbas/Database";
 import { useParams, Routes, Route, Navigate, useLocation } from "react-router-dom";
+import { useState, useEffect } from "react";
+import axios from "axios";
+
 import CourseNavigation from "./CourseNavigation";
 import Modules from "./Modules";
 import Home from "./Home";
@@ -8,13 +11,26 @@ import AssignmentEditor from "./Assignments/AssignmentEditor";
 
 
 function Courses() {
+    const URL = "http://localhost:4000/api/courses";
     const { courseId } = useParams();
-    const course = db.courses.find((course) => course._id === courseId);
-    const breadcrumb_style = {breadcrumbDivider: ">"};
+    const [course, setCourse] = useState({});
+    const findCourseById = async (courseId) => {
+        const response = await axios.get(
+            `${URL}/${courseId}`
+        );
+        setCourse(response.data);
+    };
+
+    useEffect(() => {
+        findCourseById(courseId);
+    }, [courseId]);
+
+    const breadcrumb_style = { breadcrumbDivider: ">" };
     const { pathname } = useLocation();
     var path_parts = pathname.split('/');
     var course_section = path_parts[path_parts.length - 1];
     console.log(pathname);
+
     return (
         <div className="d-flex flex-column main-window">
             <div>
@@ -32,12 +48,12 @@ function Courses() {
                 <div className="main-window">
                     <Routes>
                         <Route path="/" element={<Navigate to="Home" />} />
-                        <Route path="Home" element={<Home/>} />
+                        <Route path="Home" element={<Home />} />
                         <Route path="Modules" element={<Modules />} />
-                        <Route path="Assignments" element={<Assignments/>} />
+                        <Route path="Assignments" element={<Assignments />} />
                         <Route
                             path="Assignments/:assignmentId"
-                            element={<AssignmentEditor/>}
+                            element={<AssignmentEditor />}
                         />
                         <Route path="Grades" element={<h1>Grades</h1>} />
                     </Routes>
