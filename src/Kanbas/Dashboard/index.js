@@ -65,9 +65,6 @@ function Dashboard() {
           </li>
         ))}
       </ul> */}
-      API_BASE: {API_BASE}
-      URL: {URL}
-
       <h1>Dashboard</h1>
 
       <h5>Course</h5>
