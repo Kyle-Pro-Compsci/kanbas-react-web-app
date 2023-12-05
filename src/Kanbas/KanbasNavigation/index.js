@@ -1,8 +1,8 @@
 import { Link, useLocation } from "react-router-dom";
-import {HiClipboard, HiUserCircle, HiBookOpen, HiCalendar} from "react-icons/hi";
+import {HiClipboard, HiUserCircle, HiBookOpen, HiCalendar, HiUsers} from "react-icons/hi";
 // import "./navbar.css";
 function KanbasNavigation() {
-    const links = ["Account", "Dashboard", "Courses", "Calendar"];
+    const links = ["Account", "Signin", "Signup", "Dashboard", "Courses", "Calendar"];
     const { pathname } = useLocation();
     const style = {color: "red", fontSize: "1.5em"}
     links.map((link, index) => console.log(link, index));
@@ -14,6 +14,8 @@ function KanbasNavigation() {
                     to={`/Kanbas/${link}`}
                     className={`list-group-item ${pathname.includes(link) && "active"}`}>
                     {link === "Account" && <HiUserCircle style = {style}/>}
+                    {link === "Signin" && <HiUsers style = {style}/>}
+                    {link === "Signup" && <HiUsers style = {style}/>}
                     {link === "Dashboard" && <HiClipboard style = {style}/>}
                     {link === "Courses" && <HiBookOpen style = {style}/>}
                     {link === "Calendar" && <HiCalendar style = {style}/>}

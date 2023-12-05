@@ -8,7 +8,7 @@ function Dashboard() {
   const [courses, setCourses] = useState([]);
   const API_BASE = process.env.REACT_APP_API_BASE;
   // const URL = "http://localhost:4000/api/courses";
-  const URL = `${API_BASE}/courses`
+  const URL = `${API_BASE}/api/courses`
   console.log(`URL: ${URL}`)
   const findAllCourses = async () => {
     const response = await axios.get(URL);
@@ -65,6 +65,8 @@ function Dashboard() {
           </li>
         ))}
       </ul> */}
+      API_BASE: {API_BASE}
+      URL: {URL}
 
       <h1>Dashboard</h1>
 
